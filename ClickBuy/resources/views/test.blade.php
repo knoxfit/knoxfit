@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KNOX FIT</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <header class="top-bar">
+    <div class="container">
+      <div class="logo">KNOX FIT</div>
+      <input type="search" placeholder="O que você procura hoje?" class="search-box" />
+      <div class="icons">
+        <span class="icon heart">♡</span>
+        <span class="icon user">Entrar / Cadastrar-se</span>
+        <span class="icon cart">🛒<span class="badge">3</span></span>
+      </div>
+    </div>
+  </header>
 
-teste
-    
+  <div class="sub-bar">
+    <div class="container">
+      <span class="cep-info">📍 Informe seu CEP</span>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Todas Categorias</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Bolsas</a></li>
+          <li><a href="#">Calçados</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Novidades</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="banner">
+      <img class="background-banner" src="banner.png" alt="Banner" />
+      <img class="models-image" src="modelos-removebg-preview.png" alt="Modelos" />
+
+
+      <div class="sale-overlay">
+        <div class="sale-text">SALE</div>
+        <div class="sale-text">SALE</div>
+        <div class="sale-text">SALE</div>
+      </div>
+
+      <div class="text-overlay">
+        <div class="buy-box">
+          <div class="buy-actions">
+            <div class="timer">⏰ 72h</div>
+            <button class="buy-button">COMPRAR COM 25% DE DESCONTO</button>
+          </div>
+        </div>
+        <div class="new-collection">
+          <h1>
+            <span class="nova">Nova</span><br />
+            <span class="colecao">Coleção</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
